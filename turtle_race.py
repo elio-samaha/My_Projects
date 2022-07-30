@@ -6,9 +6,12 @@ import turtle
 
 screen = Screen()
 screen.setup(width = 500 ,height =  400)
-user_bet = screen.textinput(title = "make your bet !" , prompt = "which turtle will win the race ? (enter a color) :")
-colors = ["red" , "orange" , "yellow" , "green" , "blue" , "purple"]
+colors = {"red" , "orange" , "yellow" , "green" , "blue" , "purple"}
+user_bet = ""
+while user_bet not in colors:
+    user_bet = screen.textinput(title = "make your bet !" , prompt = "which turtle will win the race ? (enter a color) :")
 x = 0
+colors = list(colors)
 all_turtle = []
 
 for i in range(6):
