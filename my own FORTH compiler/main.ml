@@ -1,3 +1,6 @@
+(* SOUAIBY CHRISTINA 21102782
+   SAMAHA ELIO 21105733 *)
+
 (* *********** Question 1.a *********** *)
 
 type op_Pile = DUP | DROP | SWAP | ROT
@@ -219,110 +222,85 @@ let rec calc (stk:stack) (p:prog) : stack = match p with
                    
 (* *********** Question 4 *********** *)
 
-type name = string
-    (*type dico = (name * prog) list*)
-    (*let empty : dico = []*)
+type name = string 
+(*Nous avons implémenté d'abord le dictionnaire comme étant une liste d'associations (nom, programme)
+  puis nous avons transformé notre liste en ABR pour des raisons d'efficacité *)    
+(*type dico = (name * prog) list*)
+(*let empty : dico = []*)                               
 type dico = Empty | Node of ((string * prog) * dico * dico)
+let empty : dico = Empty
   
-let empty : dico = Empty           
+(* Versions initiales (non optimisées)
+   
+let add (x: name) (def: prog) (d: dico): dico =
+  (* On commence par filtrer le dictionnaire en supprimant les définitions avec le même nom que celui passe en parametre *)
+  let d = List.filter (fun (n, p) -> n <> x) d in
+  (* Puis on ajoute la nouvelle définition en tête de la liste *)
+  (x,def) :: d 
 
+let rec lookup (n: name) (d: dico): prog =
+ match d with
+ (* si le dictionnaire est vide on lève l'exception 'Not_found' *)
+ | [] -> raise Not_found 
+ (* Si le dictionnaire contient au moins une définition, on vérifie si le nom de cette définition correspond à celui recherché.
+    Si c'est le cas, on retourne le programme associé, sinon, on continue la recherche avec le reste du dictionnaire. *)
+ | (name, prog) :: rest -> if name = n then prog else lookup n rest
+   
+*)
+
+
+(* La fonction 'add' (Version optimisée) ajoute une nouvelle définition à un dictionnaire.Si une définition avec le même nom existe déjà, elle est remplacée par la nouvelle. *)
 let rec add (x: name) (def: prog) (d: dico) =
   match d with
   | Empty -> Node ((x , def) , Empty , Empty)
-  | Node ((n , p ), g , d) -> if n = x then Node ((x , def), g , d) else if x < n then Node ((n , p) , (add x def g) , d ) else Node ((n , p) , g , (add x def d))
+  | Node ((n , p ), g , d) -> if n = x then Node ((x , def), g , d) else if x < n then Node ((n , p) , (add
+                                                                                                          x def g) , d ) else Node ((n , p) , g , (add x def d))
 
+(* La fonction 'lookup' (Version optimisée) recherche une définition par son nom dans un dictionnaire.
+   Elle prend un nom et un dictionnaire, et retourne le programme associé à ce nom s'il existe, et lève l'exception 'Not_found' sinon. *)
 let rec lookup (n: name) (d: dico) =
   match d with
   | Empty -> raise Not_found
-  | Node ((k , v ), g , d)  -> if k = n then v else if n < k then lookup n g else lookup n d
-                   
-          (*
-(* La fonction 'add' ajoute une nouvelle définition à un dictionnaire.Si une définition avec le même nom existe déjà, elle est remplacée par la nouvelle. *)
-            let add2 (x: name) (def: prog) (d: dico): dico =
-  (* On commence par filtrer le dictionnaire en supprimant les définitions avec le même nom que celui passe en parametre *)
-              let d = List.filter (fun (n, p) -> n <> x) d in
-  (* Puis on ajoute la nouvelle définition en tête de la liste *)
-              (x,def) :: d
-
-(* La fonction 'lookup' recherche une définition par son nom dans un dictionnaire.
-   Elle prend un nom et un dictionnaire, et retourne le programme associé à ce nom s'il existe, et lève l'exception 'Not_found' sinon. *)
-            let rec lookup2 (n: name) (d: dico): prog = 
-              match d with 
-              | [] -> raise Not_found 
-              | (name, prog) :: rest -> if name = n then prog else lookup2 n rest 
-  *)        
+  | Node ((k , v ), g , d) -> if k = n then v else if n < k then lookup n g else lookup n d
+          
 (* *********** Question 5 *********** *)
 
 (* La fonction 'sep_n_prog' (separate name from program) evalue les definitions de nouveaux mots et les potentielles expressions imbriquees. *)
-
 let rec sep_n_prog (p : prog) (dico : dico) : dico * prog =  
   match p with 
   |[] -> raise (Invalid_argument "wrong definition sep_n_prog")
   |x::xs -> let rec aux d acc xs = match xs with
       |[] -> raise (Invalid_argument "wrong definition sep_n_prog")
-      |e :: xx -> (* si on rencontre ':' soit BEGINDEF on a une definition imbriquee (locale) alors on rappelle la fonction pour evaluer cette definition *)
+      |e :: xx -> (* si on rencontre ':' soit BEGIN_DEF on a une definition imbriquee (locale) alors on rappelle la fonction pour evaluer cette definition *)
           if e = BEGIN_DEF then let sd , sp = sep_n_prog xx d in aux sd [] sp 
           (* si on rencontre ';' soit END_DEF on a une fin de definition alors on ajoute la definition recuperee au dictionnaire et on renvoie la suite du programme (apres le ';') a evaluer *)    
           else if e = END_DEF then (add (to_string x) (List.rev acc) d , xx)
           (* sinon on continue a lire la definition *)                         
           else aux d (e :: acc) xx
       in aux dico [] xs 
-   
-        
-        
+
 (* La fonction 'eval_cond_op' évalue les opérations conditionnels et les potentielles expressions imbriquees. *)        
 let rec eval_cond_op (stk : stack) (p:prog) : stack * prog = match stk with
   (* Si la pile est vide, on lève une exception. *)
   |[] -> raise (Invalid_argument ("eval_cond_op 1 " ^ text p))
-  (* Si le sommet de la pile est 'true', on exécute la partie 'if' de l'opération conditionnelle. *)                                                             
+  (* Si le sommet de la pile est 'true', on exécute la partie 'if' de l'opération conditionnelle.
+   Si le sommet de la pile est 'false', on exécute la partie 'else' de l'opération conditionnelle.*)                                                            
   |CST_BOOL b::xs ->
       let rec aux buff acc b2 p = match p with
         |[] -> raise (Invalid_argument "eval_cond_op 2")
         |elem :: ys -> (* si on rencontre IF on a une operation conditionnelle imbriquee alors on rappelle la fonction pour evaluer cette operation *)
-            if (elem = (OP_COND IF)) then let (xx , sp) = (eval_cond_op buff ys) in aux [] [] b sp 
+            if (elem = (OP_COND IF)) then let (xx , sp) = (eval_cond_op buff ys) in aux [] [] b sp
             (* si on rencontre THEN ou ENDIF on a une fin de condition alors on ajoute le bout de programme recupere a la suite du programme (apres le THEN/ENDIF) a evaluer *)
-            else if (elem = (OP_COND THEN)) || (elem = (OP_COND ENDIF)) then (xs , (List.rev acc) @ ys) 
+            else if (elem = (OP_COND THEN)) || (elem = (OP_COND ENDIF)) then (xs , (List.rev acc) @ ys)
             (* le booleen b determine si la partie du programme est conservee pour etre ensuite evaluee ou non.
-             Dans le cas ou le sommet de la pile est true, le booleen b est a true avant le ELSE et passe a false apres ce qui permet d executer la partie IF de l operation*)
+             Dans le cas ou le sommet de la pile est true, le booleen b est a true avant le ELSE et passe a false apres ce qui permet d executer la partie IF de l operation
+             Dans le cas ou le sommet de la pile est true, le booleen b est a false avant le ELSE et passe a true apres ce qui permet d executer la partie ELSE de l operation *)
             else if elem = (OP_COND ELSE) then aux buff acc (not b2) ys
             else if b2 then aux (elem::buff) (elem::acc) b2 ys else aux (elem::buff) acc b2 ys
-      in aux [] [] b p
-  
-  |_ -> raise (Invalid_argument "eval_cond_op 4")    
-        
-        (*        
-(* La fonction 'eval_cond_op' évalue les opérations conditionnels et les potentielles expressions imbriquees. *)        
-          let rec eval_cond_op (stk : stack) (p:prog) : stack * prog = match stk with
-  (* Si la pile est vide, on lève une exception. *)
-            |[] -> raise (Invalid_argument ("eval_cond_op 1 " ^ text p))
-  (* Si le sommet de la pile est 'true', on exécute la partie 'if' de l'opération conditionnelle. *)                                                             
-            |CST_BOOL true::xs ->
-                let rec aux buff acc b p = match p with
-                  |[] -> raise (Invalid_argument "eval_cond_op 2")
-                  |elem :: ys -> (* si on rencontre IF on a une operation conditionnelle imbriquee alors on rappelle la fonction pour evaluer cette operation *)
-                      if (elem = (OP_COND IF)) then let (xx , sp) = (eval_cond_op buff ys) in aux [] [] b sp 
-            (* si on rencontre THEN ou ENDIF on a une fin de condition alors on ajoute le bout de programme recupere a la suite du programme (apres le THEN/ENDIF) a evaluer *)
-                      else if (elem = (OP_COND THEN)) || (elem = (OP_COND ENDIF)) then (xs , (List.rev acc) @ ys) 
-            (* le booleen b determine si la partie du programme est conservee pour etre ensuite evaluee ou non.
-             Dans le cas ou le sommet de la pile est true, le booleen b est a true avant le ELSE et passe a false apres ce qui permet d executer la partie IF de l operation*)
-                      else if elem = (OP_COND ELSE) then aux buff acc false ys
-                      else if b then aux (elem::buff) (elem::acc) b ys else aux (elem::buff) acc b ys
-                in aux [] [] true p
- 
-   (* Si le sommet de la pile est 'false', on exécute la partie 'else' de l'opération conditionnelle. *)      
-            |CST_BOOL false::xs ->
-                let rec aux buff acc b p = match p with
-                  |[] -> raise (Invalid_argument ("eval_cond_op 3" ^ text p))
-                  |elem :: ys -> (* cette partie est un equivalent de ce qui est fait dans le cas true a l exception du choix du bout de programme recupere *)
-                      if (elem = (OP_COND IF)) then let (xx , sp) = (eval_cond_op buff ys) in aux [] [] b sp  
-                      else if (elem = (OP_COND THEN)) || (elem = (OP_COND ENDIF)) then (xs , (List.rev acc) @ ys)
-            (* Dans le cas ou le sommet de la pile est true, le booleen b est a false avant le ELSE et passe a true apres ce qui permet d executer la partie ELSE de l operation*)
-                      else if elem = (OP_COND ELSE) then aux buff acc true ys
-                      else if b then aux (elem::buff) (elem::acc) b ys else aux (elem::buff) acc b ys
-                in aux [] [] false p
-            |_ -> raise (Invalid_argument "eval_cond_op 4")
-*)  
-  
+      in aux [] [] b p 
+  |_ -> raise (Invalid_argument "eval_cond_op 4") 
+
+
 (* La fonction 'eval' évalue un programme avec un dictionnaire et une pile donnés. *)          
 let rec eval (dico:dico) (stk:stack) (p:prog) : stack = match p with
   |[] -> stk
@@ -340,7 +318,7 @@ let rec eval (dico:dico) (stk:stack) (p:prog) : stack = match p with
     (* Pour une constante string (un mot), on cherche sa définition dans le dictionnaire puis on évalue le programme correspondant récupéré par la fonction 'lookup'. *)
     |CST_STRING mot -> eval dico stk ((lookup mot dico) @ xs)
     (* Si l'élément ne correspond à aucun des cas précédents, on lève une exception. *)
-    |_ -> raise (Invalid_argument "eval")
+    |_ -> raise (Invalid_argument "eval") 
  
 let jeux_de_test = [ (": fact dup 1 > if dup 1 - fact * then ; 6 fact", "720") ]
 
