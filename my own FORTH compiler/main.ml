@@ -11,7 +11,9 @@ type op_Comp = EQUALS | DIFF | LT | GT
                
 type op_Cond = IF | THEN | ELSE | ENDIF
                         
-type element = OP_PILE of op_Pile | OP_ARITH of op_Arith | OP_COMP of op_Comp | OP_COND of op_Cond | CST_INT of int |  CST_BOOL of bool | CST_STRING of string | BEGIN_DEF | END_DEF(* TODO *)
+type element = OP_PILE of op_Pile | OP_ARITH of op_Arith | OP_COMP of op_Comp | OP_COND of op_Cond 
+             | CST_INT of int |  CST_BOOL of bool | CST_STRING of string 
+             | BEGIN_DEF | END_DEF
 
 (* *********** Question 1.b *********** *)
 
@@ -293,8 +295,8 @@ let rec eval_cond_op (stk : stack) (p:prog) : stack * prog = match stk with
             (* si on rencontre THEN ou ENDIF on a une fin de condition alors on ajoute le bout de programme recupere a la suite du programme (apres le THEN/ENDIF) a evaluer *)
             else if (elem = (OP_COND THEN)) || (elem = (OP_COND ENDIF)) then (xs , (List.rev acc) @ ys)
             (* le booleen b determine si la partie du programme est conservee pour etre ensuite evaluee ou non.
-             Dans le cas ou le sommet de la pile est true, le booleen b est a true avant le ELSE et passe a false apres ce qui permet d executer la partie IF de l operation
-             Dans le cas ou le sommet de la pile est true, le booleen b est a false avant le ELSE et passe a true apres ce qui permet d executer la partie ELSE de l operation *)
+             Dans le cas ou le sommet de la pile est true, le booleen b est a true avant le ELSE (s'il y en a) et passe a false apres ce qui permet d executer la partie IF de l operation
+             Dans le cas ou le sommet de la pile est false, le booleen b est a false avant le ELSE (s'il y en a) et passe a true apres ce qui permet d executer la partie ELSE de l operation *)
             else if elem = (OP_COND ELSE) then aux buff acc (not b2) ys
             else if b2 then aux (elem::buff) (elem::acc) b2 ys else aux (elem::buff) acc b2 ys
       in aux [] [] b p 
