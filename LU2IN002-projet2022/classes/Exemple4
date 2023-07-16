@@ -1,0 +1,360 @@
+
+Bienvenue dans le Vignoble de Christina et Elio ! Bonne Visite :) 
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |Vigne Muscat    |                |                |Vigne Chardonnay|                |Vigne Chardonnay|                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|Vigne Muscat    |                |                |Vigne Chardonnay|Vigne Muscat    |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |Vigne Chardonnay|Vigne Chardonnay|                |                |Vigne Muscat    |                |                |Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Muscat    |                |                |Vigne Muscat    |                |                |Vigne Muscat    |Vigne Chardonnay|
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |Vigne Chardonnay|Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+
+Permettez nous de vous présenter les Vignerons :
+
+Je m'appelle Elio, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (1,2) | Actif
+Je m'appelle Christina, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (5,2) | Actif
+Je m'appelle Maissa, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (6,5) | Actif
+Je m'appelle Sarah, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (3,5) | Actif
+Moi machine 1. Moi pas fatigué. | Position (4,9) | Actif
+Moi machine 2. Moi pas fatigué. | Position (1,0) | Actif
+Je m'appelle Ina, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (8,1) | Actif
+Je m'appelle Nino, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (7,5) | Actif
+Je m'appelle Dominique, j'ai travaillé jusqu'à présent 0 heures de 8 heures. | Position (7,4) | Actif
+
+Et maintenant, passons aux choses sérieuses!
+
+
+Saison actuelle: Printemps
+
+Elio se déplace en (2,3) car la ressource en (1,2) est épuisée.
+Elio a récolté 41 kg de raisins Muscat
+Christina a récolté 41 kg de raisins Chardonnay
+Maissa se déplace en (7,6) car la ressource en (6,5) est épuisée.
+Maissa a récolté 41 kg de raisins Muscat
+Sarah se déplace en (3,6) car la ressource en (3,5) est épuisée.
+Sarah a récolté 41 kg de raisins Chardonnay
+Machine 1 a récolté 28 kg de raisins Muscat
+Machine 2 se déplace en (3,2) car la ressource en (1,0) est épuisée.
+Machine 2 a récolté 28 kg de raisins Chardonnay
+Ina se déplace en (7,1) car la ressource en (8,1) est épuisée.
+Ina a récolté 41 kg de raisins Chardonnay
+Dominique se déplace en (8,5) car la ressource en (7,4) est épuisée.
+Dominique a récolté 41 kg de raisins Muscat
+Elio a récolté 32 kg de raisins Muscat
+Christina a récolté 32 kg de raisins Chardonnay
+Maissa a récolté 32 kg de raisins Muscat
+Sarah a récolté 32 kg de raisins Chardonnay
+Machine 1 a récolté 20 kg de raisins Muscat
+Machine 2 a récolté 20 kg de raisins Chardonnay
+Ina a récolté 32 kg de raisins Chardonnay
+Dominique a récolté 32 kg de raisins Muscat
+Elio a récolté 26 kg de raisins Muscat
+Christina a récolté 26 kg de raisins Chardonnay
+Maissa a récolté 26 kg de raisins Muscat
+Sarah a récolté 26 kg de raisins Chardonnay
+Machine 1 a récolté 14 kg de raisins Muscat
+Machine 2 a récolté 14 kg de raisins Chardonnay
+Ina a récolté 26 kg de raisins Chardonnay
+Dominique a récolté 26 kg de raisins Muscat
+Elio a récolté 20 kg de raisins Muscat
+Elio a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Elio est sorti(e) du terrain
+Christina a récolté 20 kg de raisins Chardonnay
+Christina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Christina est sorti(e) du terrain
+Maissa a récolté 20 kg de raisins Muscat
+Maissa a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Maissa est sorti(e) du terrain
+Sarah a récolté 20 kg de raisins Chardonnay
+Sarah a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Sarah est sorti(e) du terrain
+Machine 1 a récolté 10 kg de raisins Muscat
+Machine 2 a récolté 10 kg de raisins Chardonnay
+Ina a récolté 20 kg de raisins Chardonnay
+Ina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Ina est sorti(e) du terrain
+Nino se déplace en (7,6) car la ressource en (7,5) est épuisée.
+AU VOLEUR ! La récolte de Muscat en (7,6) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Nino a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Nino est sorti(e) du terrain
+Dominique a récolté 20 kg de raisins Muscat
+Dominique a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Dominique est sorti(e) du terrain
+4 bouteilles de Chardonnay ont été vendues
+20 bouteilles de Muscat ont été vendues
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |Vigne Muscat    |                |                |Vigne Chardonnay|                |Vigne Chardonnay|                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|Vigne Muscat    |                |                |Vigne Chardonnay|Vigne Muscat    |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |Vigne Chardonnay|Vigne Chardonnay|                |                |Vigne Muscat    |                |                |Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Muscat    |                |                |Vigne Muscat    |                |                |Vigne Muscat    |Vigne Chardonnay|
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |Vigne Chardonnay|Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+
+
+Saison actuelle: Ete
+
+Elio est rentré(e) sur le terrain
+Elio a récolté 18 kg de raisins Muscat
+Christina est rentré(e) sur le terrain
+Christina a récolté 18 kg de raisins Chardonnay
+Maissa est rentré(e) sur le terrain
+Maissa a récolté 10 kg de raisins Muscat
+Sarah est rentré(e) sur le terrain
+Sarah a récolté 18 kg de raisins Chardonnay
+Machine 1 a récolté 8 kg de raisins Muscat
+Machine 2 a récolté 8 kg de raisins Chardonnay
+Ina est rentré(e) sur le terrain
+Ina a récolté 18 kg de raisins Chardonnay
+Dominique est rentré(e) sur le terrain
+Dominique a récolté 18 kg de raisins Muscat
+Elio a récolté 14 kg de raisins Muscat
+Christina a récolté 14 kg de raisins Chardonnay
+Maissa a récolté 8 kg de raisins Muscat
+Sarah a récolté 14 kg de raisins Chardonnay
+Machine 1 a récolté 5 kg de raisins Muscat
+Machine 2 a récolté 5 kg de raisins Chardonnay
+Ina a récolté 14 kg de raisins Chardonnay
+Dominique a récolté 14 kg de raisins Muscat
+Elio a récolté 11 kg de raisins Muscat
+Christina a récolté 11 kg de raisins Chardonnay
+Maissa a récolté 6 kg de raisins Muscat
+Sarah a récolté 11 kg de raisins Chardonnay
+Machine 1 a récolté 4 kg de raisins Muscat
+Machine 2 a récolté 4 kg de raisins Chardonnay
+Ina a récolté 11 kg de raisins Chardonnay
+Dominique a récolté 11 kg de raisins Muscat
+Elio a récolté 9 kg de raisins Muscat
+Elio a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Elio est sorti(e) du terrain
+Christina a récolté 9 kg de raisins Chardonnay
+Christina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Christina est sorti(e) du terrain
+Maissa a récolté 5 kg de raisins Muscat
+Maissa a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Maissa est sorti(e) du terrain
+Sarah a récolté 9 kg de raisins Chardonnay
+Sarah a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Sarah est sorti(e) du terrain
+Machine 1 a récolté 2 kg de raisins Muscat
+Machine 2 a récolté 2 kg de raisins Chardonnay
+Ina a récolté 9 kg de raisins Chardonnay
+Ina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Ina est sorti(e) du terrain
+Nino est rentré(e) sur le terrain
+AU VOLEUR ! La récolte de Muscat en (7,6) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Dominique a récolté 9 kg de raisins Muscat
+Dominique a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Dominique est sorti(e) du terrain
+82 bouteilles de Chardonnay ont été vendues
+26 bouteilles de Muscat ont été vendues
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |Vigne Muscat    |                |                |Vigne Chardonnay|                |Vigne Chardonnay|                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|Vigne Muscat    |                |                |Vigne Chardonnay|Vigne Muscat    |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |Vigne Chardonnay|Vigne Chardonnay|                |                |Vigne Muscat    |                |                |Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Muscat    |                |                |Vigne Muscat    |                |                |Vigne Muscat    |Vigne Chardonnay|
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |Vigne Chardonnay|Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+
+
+Saison actuelle: Automne
+
+Elio est rentré(e) sur le terrain
+Elio a récolté 9 kg de raisins Muscat
+Christina est rentré(e) sur le terrain
+Christina a récolté 9 kg de raisins Chardonnay
+Sarah est rentré(e) sur le terrain
+Sarah a récolté 9 kg de raisins Chardonnay
+Machine 1 a récolté 3 kg de raisins Muscat
+Machine 2 a récolté 3 kg de raisins Chardonnay
+Ina est rentré(e) sur le terrain
+Ina a récolté 9 kg de raisins Chardonnay
+AU VOLEUR ! La récolte de Muscat en (7,6) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Dominique est rentré(e) sur le terrain
+Dominique a récolté 9 kg de raisins Muscat
+Elio a récolté 7 kg de raisins Muscat
+Christina a récolté 7 kg de raisins Chardonnay
+Sarah a récolté 7 kg de raisins Chardonnay
+Machine 1 a récolté 2 kg de raisins Muscat
+Machine 2 a récolté 2 kg de raisins Chardonnay
+Ina a récolté 7 kg de raisins Chardonnay
+AU VOLEUR ! La récolte de Muscat en (7,6) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Dominique a récolté 7 kg de raisins Muscat
+Elio a récolté 5 kg de raisins Muscat
+Christina a récolté 5 kg de raisins Chardonnay
+Sarah a récolté 5 kg de raisins Chardonnay
+Machine 1 a récolté 1 kg de raisins Muscat
+Machine 2 a récolté 1 kg de raisins Chardonnay
+Ina a récolté 5 kg de raisins Chardonnay
+AU VOLEUR ! La récolte de Muscat en (7,6) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Nino a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Nino est sorti(e) du terrain
+Dominique a récolté 5 kg de raisins Muscat
+Elio a récolté 4 kg de raisins Muscat
+Elio a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Elio est sorti(e) du terrain
+Christina a récolté 4 kg de raisins Chardonnay
+Christina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Christina est sorti(e) du terrain
+Maissa est rentré(e) sur le terrain
+Maissa se déplace en (7,7) car la ressource en (7,6) est épuisée.
+Maissa a récolté 45 kg de raisins Chardonnay
+Sarah a récolté 4 kg de raisins Chardonnay
+Sarah a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Sarah est sorti(e) du terrain
+Machine 1 a récolté 1 kg de raisins Muscat
+Machine 2 a récolté 1 kg de raisins Chardonnay
+Ina a récolté 4 kg de raisins Chardonnay
+Ina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Ina est sorti(e) du terrain
+Nino est rentré(e) sur le terrain
+Dominique a récolté 4 kg de raisins Muscat
+Dominique a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Dominique est sorti(e) du terrain
+135 bouteilles de Chardonnay ont été vendues
+186 bouteilles de Muscat ont été vendues
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |Vigne Muscat    |                |                |Vigne Chardonnay|                |Vigne Chardonnay|                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|Vigne Muscat    |                |                |Vigne Chardonnay|Vigne Muscat    |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |Vigne Chardonnay|Vigne Chardonnay|                |                |Vigne Muscat    |                |                |Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |                |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Muscat    |                |                |Vigne Muscat    |                |                |Vigne Muscat    |Vigne Chardonnay|
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |Vigne Chardonnay|Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+
+
+Saison actuelle: Hiver
+
+Elio est rentré(e) sur le terrain
+Elio a récolté -1 kg de raisins Muscat
+Christina est rentré(e) sur le terrain
+Christina a récolté -1 kg de raisins Chardonnay
+Maissa a récolté 31 kg de raisins Chardonnay
+Sarah est rentré(e) sur le terrain
+Sarah a récolté -1 kg de raisins Chardonnay
+Machine 1 a récolté -2 kg de raisins Muscat
+Machine 2 a récolté -2 kg de raisins Chardonnay
+Ina est rentré(e) sur le terrain
+Ina a récolté -1 kg de raisins Chardonnay
+Dominique est rentré(e) sur le terrain
+Dominique a récolté -1 kg de raisins Muscat
+Elio se déplace en (3,3) car la ressource en (2,3) est épuisée.
+Elio a récolté 40 kg de raisins Muscat
+Christina se déplace en (4,2) car la ressource en (5,2) est épuisée.
+Christina a récolté 40 kg de raisins Chardonnay
+Maissa a récolté 24 kg de raisins Chardonnay
+Sarah se déplace en (2,6) car la ressource en (3,6) est épuisée.
+Sarah a récolté 40 kg de raisins Chardonnay
+Machine 1 se déplace en (2,8) car la ressource en (4,9) est épuisée.
+Machine 1 a récolté 28 kg de raisins Chardonnay
+Ina se déplace en (7,2) car la ressource en (7,1) est épuisée.
+Ina a récolté 40 kg de raisins Chardonnay
+Elio a récolté 32 kg de raisins Muscat
+Christina a récolté 32 kg de raisins Chardonnay
+Maissa a récolté 19 kg de raisins Chardonnay
+Maissa a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Maissa est sorti(e) du terrain
+Sarah a récolté 32 kg de raisins Chardonnay
+Machine 1 a récolté 19 kg de raisins Chardonnay
+Ina a récolté 32 kg de raisins Chardonnay
+Nino se déplace en (7,7) car la ressource en (7,6) est épuisée.
+AU VOLEUR ! La récolte de Chardonnay en (7,7) a été volée par un Homme malhonnête, 50% a été perdu. Le coupable est : Nino
+Nino a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Nino est sorti(e) du terrain
+Dominique se déplace en (7,7) car la ressource en (8,5) est épuisée.
+Dominique a récolté 8 kg de raisins Chardonnay
+Elio a récolté 25 kg de raisins Muscat
+Elio a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Elio est sorti(e) du terrain
+Christina a récolté 25 kg de raisins Chardonnay
+Christina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Christina est sorti(e) du terrain
+Sarah a récolté 25 kg de raisins Chardonnay
+Sarah a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Sarah est sorti(e) du terrain
+Machine 1 a récolté 13 kg de raisins Chardonnay
+Machine 2 se déplace en (3,3) car la ressource en (3,2) est épuisée.
+Machine 2 a récolté 14 kg de raisins Muscat
+Ina a récolté 25 kg de raisins Chardonnay
+Ina a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Ina est sorti(e) du terrain
+Dominique a récolté 6 kg de raisins Chardonnay
+Dominique a travaillé jusqu'à présent 8 heures. Il/Elle est fatigué(e).
+Dominique est sorti(e) du terrain
+14 bouteilles de Chardonnay ont été vendues
+104 bouteilles de Muscat ont été vendues
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|Vigne Muscat    |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |Vigne Chardonnay|Vigne Chardonnay|                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |Vigne Chardonnay|                |Vigne Chardonnay|                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |Vigne Muscat    |                |                |                |Vigne Muscat    |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |Vigne Chardonnay|Vigne Chardonnay|                |                |Vigne Muscat    |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|Vigne Muscat    |                |                |                |                |                |                |                |                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Chardonnay|                |                |                |                |Vigne Chardonnay|                |                |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |Vigne Muscat    |                |                |                |                |                |Vigne Muscat    |Vigne Chardonnay|
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+|                |                |                |                |                |                |                |                |Vigne Chardonnay|Vigne Muscat    |
+:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:----------------:
+
